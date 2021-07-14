@@ -1,0 +1,25 @@
+importFrom("grDevices", "dev.interactive", "devAskNewPage")
+importFrom("graphics", "image", "par", "plot", "lines")
+importFrom("stats", ".getXlevels", "as.formula", "contrasts", "family",
+             "gaussian", "glm", "model.frame", "model.matrix", "na.pass",
+             "predict.lm", "qqline", "qqnorm", "reformulate", "terms",
+             "terms.formula")             
+importFrom("MASS","ginv")
+importFrom("stats","qnorm","var","glm.fit")
+
+
+
+S3method("predict","sop")
+S3method("plot","sop")
+S3method(print, sop)
+S3method(print, summary.sop)
+S3method(summary, sop)
+S3method("predict","sop")
+S3method("plot","sop")
+S3method(print, sop)
+S3method(print, summary.sop)
+S3method(summary, sop)
+
+
+export(sop, f, ad, rae, sop.control, sop.fit)
+
