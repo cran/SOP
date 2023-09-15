@@ -141,7 +141,7 @@ predict.sop <- function(object, newdata, type = c("response", "link", "terms"), 
 
 	    # Exclude NAs in the covariates
 	    na.ind <- apply(is.na(newdata[, object$model.terms, drop = FALSE]), 1, any)	    
-	    newdata.na <- newdata[!na.ind,]
+	    newdata.na <- newdata[!na.ind,, drop = FALSE]
 	}
 
 	cnames <- object$names.terms
